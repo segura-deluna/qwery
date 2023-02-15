@@ -176,3 +176,79 @@ p {
   line-height: 23px;
   color: #fff;
 }
+
+.content {
+  width: 100%;
+  max-width: 865px;
+  margin: 200px auto 0;
+}
+.content__suptitle {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FFA343;
+  margin-left: 105px;
+  margin-bottom: 30px;
+}
+.content__suptitle::after {
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #FFA343;
+  top: 50%;
+  left: -100px;
+  transform: translateY(-50%);
+}
+.content__title {
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 100px;
+  margin-bottom: 125px;
+}
+.content__title span {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+.content__scroll {
+  width: 126px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.content__scroll_icon {
+  width: 16px;
+  height: 24px;
+  fill: #fff;
+}
+.content__follow {
+  position: absolute;
+  width: 214px;
+  left: -80px;
+  top: 400px;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__follow_text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.content__follow_icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  transform: rotate(-90deg);
+}
