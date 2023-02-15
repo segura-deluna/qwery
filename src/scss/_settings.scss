@@ -16,16 +16,10 @@ html {
   height: 100%;
   font-family: $font-family;
   -webkit-text-size-adjust: 100%;
-  color: $white;
-}
-
-.body__page {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
   font-size: 16px;
   background-color: $black;
-  overflow: hidden;
+  color: $white;
+  overflow-x: hidden;
 }
 
 img {
@@ -40,6 +34,17 @@ a {
 
 h1, h2, h3, p {
   margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
 }
 
 .btn-reset {

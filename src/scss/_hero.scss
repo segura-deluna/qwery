@@ -1,7 +1,17 @@
-.hero{
+.hero {
   width: 100%;
   height: 1573px;
+  padding-top: 65px;
   background-image: url('../img/bg_hero.webp');
-  background-size:cover ;
-  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__container {
+    position: relative;
+    width: 100%;
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
