@@ -320,3 +320,34 @@ p {
   height: 16px;
   fill: #FFA343;
 }
+
+.slider__suptitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #FFA343;
+}
+.slider__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+}
+.slider__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+}
+.slider__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFA343;
+}
+.slider__link_arrow {
+  width: 24px;
+  height: 16px;
+  fill: #FFA343;
+}

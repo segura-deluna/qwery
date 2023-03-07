@@ -1,0 +1,63 @@
+.promo {
+  &__slider {
+  }
+}
+
+.slider {
+  &__wrapper {
+  }
+
+  &__item {
+  }
+
+  &__description{
+
+  }
+
+  &__suptitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+
+  &__title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+  }
+
+  &__text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  &__link{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: $accent;
+
+    &_arrow{
+      width: 24px;
+      height: 16px;
+      fill:$accent;
+    }
+  }
+}
+
+.slider-button-next {
+}
+
+.swiper-button-next {
+}
+
+.slider-button-prev {
+}
+
+.swiper-button-prev {
+}

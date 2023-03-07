@@ -215,11 +215,19 @@ export const svgSprites = () =>
     }),
   ).pipe(gulp.dest(path.dist.buildSvg))
 
-export const copy = () =>
+export const copyFonts = () =>
   gulp
   .src(path.src.fonts)
   .pipe(gulp.dest(path.dist.fonts))
-  .pipe(gulp.src(path.src.libs))
+  .pipe(
+    browserSync.stream({
+      once: true,
+    }),
+  )
+
+export const copyLibs = () =>
+  gulp
+  .src(path.src.libs)
   .pipe(gulp.dest(path.dist.libs))
   .pipe(
     browserSync.stream({
@@ -267,7 +275,8 @@ export const base = gulp.series(
   avif,
   webp,
   svgSprites,
-  copy,
+  copyFonts,
+  copyLibs,
   server,
 )
 

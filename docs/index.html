@@ -8,8 +8,8 @@
   
   <title> Wonderful Indonesia</title>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <link rel='stylesheet' href='libs/swiper-bundle.min.css'>
-  <script src="libs/swiper-bundle.min.js"></script>
+  <link defer rel='stylesheet' href='libs/swiper-bundle.min.css'>
+  <script defer src="libs/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/index.min.css">
   <script defer src="js/index.min.js"></script>
 </head>
@@ -102,14 +102,83 @@
 <!-- /.location -->
 <section class='promo'>
   <div class='container'>
-    <div class='promo__slider slider'>
-      <div class="slider__wrapper">
-        <div class="slider__item">Slide 1</div>
-        <div class="slider__item">Slide 2</div>
-        <div class="slider__item">Slide 3</div>
+    <div class='promo__slider slider swiper'>
+      <div class="slider__wrapper swiper-wrapper">
+        <div class="slider__item swiper-slide">
+          <picture>
+            <source srcset='./img/image_2.webp' type='img/webp'>
+            <source srcset='./img/image_2.avif' type='img/avif'>
+            <img src='./img/image_2.jpg' alt='plate'>
+          </picture>
+          <div class='slider__description'>
+            <span class='slider__suptitle'>Bromo</span>
+            <h2 class='slider__title'>Steady your steps, we will climb together!</h2>
+            <p class='slider__text'>
+              Enjoying the vast expanse of the sea of ​​​​sand,
+              witnessing the splendor of Mount Semeru that soars into the sky,
+              and gazing at the beauty of the sun moving out of its bed or
+              otherwise enjoying the dim twilight from the Bromo ridge is an
+              unforgettable experience when visiting Bromo.
+            </p>
+            <a href='' class='slider__link'>
+              read more
+              <svg class='slider__link_arrow'>
+              <use xlink:href='./assets/icons/sprite.svg#arrow_downward'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+          <picture>
+            <source srcset='./img/image_2.webp' type='img/webp'>
+            <source srcset='./img/image_2.avif' type='img/avif'>
+            <img src='./img/image_2.jpg' alt='plate'>
+          </picture>
+          <div class='slider__description'>
+            <span class='slider__suptitle'>Bromo</span>
+            <h2 class='slider__title'>Steady your steps, we will climb together!</h2>
+            <p class='slider__text'>
+              Enjoying the vast expanse of the sea of ​​​​sand,
+              witnessing the splendor of Mount Semeru that soars into the sky,
+              and gazing at the beauty of the sun moving out of its bed or
+              otherwise enjoying the dim twilight from the Bromo ridge is an
+              unforgettable experience when visiting Bromo.
+            </p>
+            <a href='' class='slider__link'>
+              read more
+              <svg class='slider__link_arrow'>
+                <use xlink:href='./assets/icons/sprite.svg#arrow_downward'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+          <picture>
+            <source srcset='./img/image_2.webp' type='img/webp'>
+            <source srcset='./img/image_2.avif' type='img/avif'>
+            <img src='./img/image_2.jpg' alt='plate'>
+          </picture>
+          <div class='slider__description'>
+            <span class='slider__suptitle'>Bromo</span>
+            <h2 class='slider__title'>Steady your steps, we will climb together!</h2>
+            <p class='slider__text'>
+              Enjoying the vast expanse of the sea of ​​​​sand,
+              witnessing the splendor of Mount Semeru that soars into the sky,
+              and gazing at the beauty of the sun moving out of its bed or
+              otherwise enjoying the dim twilight from the Bromo ridge is an
+              unforgettable experience when visiting Bromo.
+            </p>
+            <a href='' class='slider__link'>
+              read more
+              <svg class='slider__link_arrow'>
+                <use xlink:href='./assets/icons/sprite.svg#arrow_downward'></use>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="slider-button-prev"></div>
-      <div class="slider-button-next"></div>
+      <div class="slider-button-next swiper-button-next"></div>
+      <div class="slider-button-prev swiper-button-prev"></div>
     </div>
   </div>
 </section>
