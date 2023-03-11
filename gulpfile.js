@@ -241,7 +241,7 @@ export const server = () => {
     ui: false,
     notify: true,
     host: 'localhost',
-    browser: 'D:\\SOFT\\Portable\\chrome-win\\chrome.exe',
+    // browser: 'D:\\SOFT\\Portable\\chrome-win\\chrome.exe',
     // tunnel: true,
     server: {
       baseDir: path.dist.base,
