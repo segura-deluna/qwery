@@ -321,9 +321,11 @@ p {
   fill: #FFA343;
 }
 
+.promo {
+  margin-bottom: 227px;
+}
 .promo__slider {
   width: 100%;
-  margin-bottom: 227px;
 }
 
 .slider__item {
@@ -417,4 +419,18 @@ p {
 .swiper-button-prev::after,
 .swiper-button-next::after {
   visibility: hidden;
+}
+
+.culture {
+  margin-bottom: 250px;
+}
+.culture__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.culture__description {
+  width: 100%;
+  max-width: 630px;
 }

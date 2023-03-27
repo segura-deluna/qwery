@@ -84,18 +84,27 @@ export const html = () =>
         collapseWhitespace: true,
       }),
     ),
-  ).pipe(gulp.dest(path.dist.html)).pipe(browserSync.stream())
+  )
+  .pipe(gulp.dest(path.dist.html))
+  .pipe(browserSync.stream())
 
 //css
 export const scss = () =>
-  gulp.src(path.src.scss).pipe(gulpIf(dev, sourcemaps.init())).pipe(scssToCss().on('error', scssToCss.logError)).pipe(gulp.dest(path.dist.css)).pipe(
+  gulp.src(path.src.scss)
+  .pipe(gulpIf(dev, sourcemaps.init()))
+  .pipe(scssToCss().on('error', scssToCss.logError))
+  .pipe(gulp.dest(path.dist.css))
+  .pipe(
     gulpIf(
       !dev,
       autoprefixer({
         cascade: false,
       }),
     ),
-  ).pipe(gulpIf(!dev, gcmq())).pipe(gulpIf(!dev, gulp.dest(path.dist.css))).pipe(
+  )
+  .pipe(gulpIf(!dev, gcmq()))
+  .pipe(gulpIf(!dev, gulp.dest(path.dist.css)))
+  .pipe(
     gulpIf(
       !dev,
       cleanCSS({
@@ -104,7 +113,11 @@ export const scss = () =>
         },
       }),
     ),
-  ).pipe(rename({ suffix: '.min' })).pipe(gulpIf(dev, sourcemaps.write())).pipe(gulp.dest(path.dist.css)).pipe(browserSync.stream())
+  )
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(gulpIf(dev, sourcemaps.write()))
+  .pipe(gulp.dest(path.dist.css))
+  .pipe(browserSync.stream())
 
 //webpack
 const configWebpack = {
@@ -135,11 +148,19 @@ if (!dev) {
 
 //js
 export const js = () =>
-  gulp.src(path.src.js).pipe(plumber()).pipe(webpack(configWebpack)).pipe(gulpIf(dev, gulp.dest(path.dist.js))).pipe(gulpIf(!dev, terser())).pipe(
+  gulp.src(path.src.js)
+  .pipe(plumber())
+  .pipe(webpack(configWebpack))
+  .pipe(gulpIf(dev, gulp.dest(path.dist.js)))
+  .pipe(gulpIf(!dev, terser()))
+  .pipe(
     rename({
       suffix: '.min',
     }),
-  ).pipe(gulpIf(!dev, gulp.dest(path.dist.js))).pipe(gulp.dest(path.dist.js)).pipe(browserSync.stream())
+  )
+  .pipe(gulpIf(!dev, gulp.dest(path.dist.js)))
+  .pipe(gulp.dest(path.dist.js))
+  .pipe(browserSync.stream())
 
 //image
 const image = () =>
@@ -164,7 +185,9 @@ const image = () =>
         svgo: ['--enable', 'cleanupIDs', '--disable', 'convertColors'],
       }),
     ),
-  ).pipe(gulp.dest(path.dist.img)).pipe(
+  )
+  .pipe(gulp.dest(path.dist.img))
+  .pipe(
     browserSync.stream({
       once: true,
     }),
@@ -175,7 +198,9 @@ const webp = () =>
     gulpWebp({
       quality: dev ? 100 : 70,
     }),
-  ).pipe(gulp.dest(path.dist.img)).pipe(
+  )
+  .pipe(gulp.dest(path.dist.img))
+  .pipe(
     browserSync.stream({
       once: true,
     }),
@@ -186,7 +211,9 @@ export const avif = () =>
     gulpAvif({
       quality: dev ? 100 : 50,
     }),
-  ).pipe(gulp.dest(path.dist.img)).pipe(
+  )
+  .pipe(gulp.dest(path.dist.img))
+  .pipe(
     browserSync.stream({
       once: true,
     }),
@@ -205,7 +232,9 @@ export const svgSprites = () =>
         xmlMode: true,
       },
     }),
-  ).pipe(replace('&gt;', '>')).pipe(
+  )
+  .pipe(replace('&gt;', '>'))
+  .pipe(
     svgSprite({
       mode: {
         stack: {
@@ -213,7 +242,8 @@ export const svgSprites = () =>
         },
       },
     }),
-  ).pipe(gulp.dest(path.dist.buildSvg))
+  )
+  .pipe(gulp.dest(path.dist.buildSvg))
 
 export const copyFonts = () =>
   gulp
