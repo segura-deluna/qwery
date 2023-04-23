@@ -434,3 +434,77 @@ p {
   width: 100%;
   max-width: 630px;
 }
+
+.footer__up {
+  position: relative;
+  width: 100%;
+  padding: 0 0 47px 4px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__up::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+.footer__logo {
+  width: 100%;
+  max-width: 173px;
+}
+.footer__buttons {
+  width: 100%;
+  max-width: 470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__buttons span {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: -0.3px;
+}
+.footer__buttons button {
+  width: 240px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: #FFA343;
+  color: #000;
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials__icon {
+  display: block;
+}
+.socials__icon_img {
+  fill: #fff;
+  stroke: #fff;
+}
+.socials__icon_facebook {
+  width: 13px;
+  height: 37px;
+}
+.socials__icon_twitter {
+  width: 28px;
+  height: 24px;
+}
+.socials__icon_instagram {
+  width: 28px;
+  height: 30px;
+}
