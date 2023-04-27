@@ -166,12 +166,20 @@
   align-items:center;
   margin-bottom: 156px;
   &__links {
+
   }
 
-  &__terms {
+  &__terms,
+  &__policy{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: $white;
   }
 
   &__policy {
+    margin-left: 100px;
   }
 
   &__icons {
@@ -181,6 +189,7 @@
 
   &__icon {
     display: block;
+    margin-left: 50px;
 
     &_img {
       fill:$white;

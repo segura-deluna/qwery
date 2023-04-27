@@ -570,12 +570,23 @@ p {
   align-items: center;
   margin-bottom: 156px;
 }
+.socials__terms, .socials__policy {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  color: #fff;
+}
+.socials__policy {
+  margin-left: 100px;
+}
 .socials__icons {
   display: flex;
   align-items: center;
 }
 .socials__icon {
   display: block;
+  margin-left: 50px;
 }
 .socials__icon_img {
   fill: #fff;
